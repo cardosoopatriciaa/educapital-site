@@ -3,143 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduCapital</title>
-  <style>
-    :root {
-      --azul-claro: #B3D6E3;
-      --amarelo: #F4B400;
-      --azul-escuro: #1C3F60;
-      --verde: #65C8AF;
-      --offwhite: #F3F0EB;
-      --preto: #191919;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", sans-serif;
-    }
-
-    body {
-      background-color: var(--offwhite);
-      color: var(--azul-escuro);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: var(--azul-claro);
-      padding: 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: var(--preto);
-    }
-
-    .cta {
-      background-color: var(--amarelo);
-      color: var(--preto);
-      padding: 1rem 2rem;
-      margin-top: 1rem;
-      display: inline-block;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: var(--preto);
-      margin-bottom: 1rem;
-    }
-
-    .planos {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    .plano {
-      background: var(--azul-claro);
-      padding: 1.5rem;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: var(--preto);
-      color: var(--offwhite);
-      text-align: center;
-      padding: 2rem;
-    }
-
-    @media (min-width: 768px) {
-      .planos {
-        flex-direction: row;
-      }
-    }
-  </style>
+  <title>EduCapital | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Educação Financeira para Universitários, sem Jargões</h1>
-    <p>Aprenda a organizar seu dinheiro com trilhas práticas, mentorias e conteúdo direto ao ponto.</p>
-    <a href="#planos" class="cta">Comece agora – Plano Gratuito</a>
-  </header>
-
-  <section>
-    <h2>Sobre a EduCapital</h2>
-    <p>A EduCapital é uma plataforma digital focada exclusivamente em universitários, oferecendo conteúdo acessível, personalizado e aplicável ao dia a dia. Nossa missão é promover autonomia financeira desde o início da vida adulta.</p>
-  </section>
-
-  <section id="planos">
-    <h2>Planos e Preços</h2>
-    <div class="planos">
-      <div class="plano">
-        <h3>Gratuito</h3>
-        <p>Vídeos introdutórios, eBooks, planilhas e acesso ao fórum comunitário.</p>
-      </div>
-      <div class="plano">
-        <h3>Essencial – R$ 9,90/mês</h3>
-        <p>Trilhas completas, aulas gravadas e ao vivo com atualizações frequentes.</p>
-      </div>
-      <div class="plano">
-        <h3>Premium – R$ 29,90/mês</h3>
-        <p>Inclui tudo do plano essencial + mentorias individuais, eventos exclusivos e conteúdos personalizados.</p>
-      </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="planos.html">Planos</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <div class="hero">
+      <h1>Educação Financeira sem Complicação</h1>
+      <p>Para estudantes que querem controlar o próprio dinheiro com autonomia.</p>
+      <a href="planos.html" class="btn">Conheça os Planos</a>
     </div>
-  </section>
-
-  <section>
-    <h2>Equipe Fundadora</h2>
-    <ul>
-      <li><strong>Ana Clara:</strong> Produto e Tecnologia – UX/UI, desenvolvimento ágil</li>
-      <li><strong>Julia Lopes:</strong> Comunicação – branding e redes sociais</li>
-      <li><strong>Letícia:</strong> Conteúdo – finanças, didática e trilhas</li>
-      <li><strong>Patrícia:</strong> Parcerias – alianças institucionais e ESG</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contato</h2>
-    <p>Email: contato@educapital.com.br</p>
-    <p>Instagram | TikTok | YouTube</p>
-  </section>
-
-  <footer>
-    <p>© 2025 EduCapital. Todos os direitos reservados.</p>
-    <p><a href="#" style="color: var(--azul-claro); text-decoration: underline;">Política de Privacidade</a> | <a href="#" style="color: var(--azul-claro); text-decoration: underline;">Termos de Uso</a></p>
-  </footer>
+  </header>
 </body>
 </html>
