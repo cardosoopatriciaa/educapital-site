@@ -5,56 +5,62 @@ body {
   background: #F3F0EB;
   color: #1C3F60;
 }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
 .hero {
   background: linear-gradient(135deg, #B3D6E3, #65C8AF);
+  color: #191919;
   text-align: center;
   padding: 5rem 2rem;
 }
 .hero h1 {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #191919;
 }
 .hero p {
   font-size: 1.3rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .btn {
   display: inline-block;
   background: #F4B400;
   color: #191919;
   padding: 1rem 2rem;
-  text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 .btn:hover {
   background: #e0a800;
 }
-.btn.grande {
-  font-size: 1.25rem;
-}
-section {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 0 2rem;
-}
-.intro, .benefits, .planos, .cta-final {
+.sobre, .beneficios, .planos {
   text-align: center;
+  padding: 4rem 2rem;
 }
-.benefits ul {
-  list-style: none;
-  padding: 0;
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
-.benefits li {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+.box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-size: 1rem;
 }
 .cards {
   display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
   margin-top: 2rem;
 }
@@ -62,12 +68,37 @@ section {
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  flex: 1;
   min-width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+.card li {
+  margin: 0.5rem 0;
 }
 .card.destaque {
   border: 2px solid #F4B400;
+}
+.card .preco {
+  display: block;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.cta-final {
+  background: #1C3F60;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.cta-final .btn {
+  background: #F4B400;
+  margin-top: 1rem;
 }
 footer {
   background: #191919;
@@ -78,5 +109,4 @@ footer {
 footer a {
   color: #B3D6E3;
   text-decoration: none;
-  margin: 0 0.5rem;
 }
